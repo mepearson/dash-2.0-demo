@@ -3,10 +3,11 @@
 import pandas as pd # Dataframe manipulations
 import math
 
-# Dash App
-# from jupyter_dash import JupyterDash # for running in a Jupyter Notebook
-import dash_core_components as dcc
-import dash_table
+# Dash Framework
+import dash_bootstrap_components as dbc
+import dash_daq as daq
+from dash import Dash, callback, clientside_callback, html, dcc, dash_table, Input, Output, State, MATCH, ALL
+from dash.exceptions import PreventUpdate
 
 # Data Visualization
 import plotly.express as px
