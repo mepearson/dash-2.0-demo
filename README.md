@@ -1,18 +1,18 @@
-# Weekly Reporting metrics for the A2CPS program
-Docker container of Dash App to display A2CPS trial weekly reporting metrics.
+# Dash App in Docker Container: Demo App
+This is a very simple Dash App to provide a demonstration repo for launching dash within a docker container. This repo can be used for standing up new dash applications within the TACC infrastructure syste,.
 
-This dashboard is intended for use by study personnel and others interested in the reasons why patients either complete or leave the trial.
 
 ## Version History
-| Version   | Date | Description |
-| ------ | ------ | ------ |
-| 0.0.1 | 05/18/2021 | Initial dashboard with portions of the data loaded into tables. |
+This app is written in Dash 1.19.0.  For a Dash 2.0 app, please use the Dash 2.0 demo rep [add_repo_site]
 
-## Dashboard Description
-
-Data from the A2CPS program is loaded via apis that provide information on both all screened patients and those who continue into the program.
-
-This data is cleaned and transformed to create the tables as outlined in the Weekly Report document on Confluence.
+## Dash App File Description
+The files to run the dash app are contained within the 'src' folder of the directory. The code has been separated into component files as follows:
+* app.py - the file to run the main Dash app. Other files are imported into here for use.
+* config_settings.py - file to contain any security or configuration specific Settings
+* data_processing.py - file to handle any data processing needs that aren't handled upstream of the application. The demo code merely imports the standard packages without any actual code, though most applications need extensive initial data wrangling and that code should go here. This file may be rendered obsolete in applications pulling from databases that can provide the required data views.
+* make_components.py - file to generate custom functions to build reusable dash components from dynamic settings.
+* styling.py - file for any styling choices that are provided directly from python and not from a css file located either externally or in the assets folder
+* assets folder - folder to hold files such as css, data folders, etc. following standard dash app protocols.
 
 # Development Previews
 
