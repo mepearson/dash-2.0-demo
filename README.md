@@ -3,7 +3,7 @@ This is a very simple Dash App to provide a demonstration repo for launching das
 
 
 ## Version History
-This app is written in Dash 1.19.0.  For a Dash 2.0 app, please use the Dash 2.0 demo rep [add_repo_site]
+This app is written in Dash 2.0.  For a Dash 1.0 app, please use the Dash 1.0 demo rep [https://github.com/mepearson/dash-demo]
 
 ## Dash App File Description
 The files to run the dash app are contained within the 'src' folder of the directory. The code has been separated into component files as follows:
