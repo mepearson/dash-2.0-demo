@@ -4,7 +4,7 @@
 version: "3"
 services:
   dash_2_demo:
-    build:
+    build: .
     ports:
       - 8050:8050
     container_name: dash_2_demo
